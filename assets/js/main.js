@@ -30,6 +30,30 @@
         //     });
         // });
 
+
+        let offcanvasElement = $(".header-offcanvas");
+        offcanvasElement.on("show.bs.offcanvas", function () {
+            $(".menu-icon").addClass("open");
+            $(".close-icon span:nth-child(1)").css({
+                transform: "rotate(45deg)"
+            });
+            $(".close-icon span:nth-child(2)").css({
+                transform: "rotate(-45deg)",
+                marginTop: "-2px"
+            });
+        });
+        offcanvasElement.on("hide.bs.offcanvas", function () {
+            $(".menu-icon").removeClass("open");
+            $(".close-icon span:nth-child(1)").css({
+                transform: ""
+            });
+            $(".close-icon span:nth-child(2)").css({
+                transform: "",
+                marginTop: "-2px"
+            });
+        });
+
+
         // nice select
         $('select').niceSelect();
 
@@ -92,12 +116,14 @@
 			breakpoints: {
 				0: {
 					slidesPerView: 1,
+                    spaceBetween: 17,
 				},
 				480: {
 					slidesPerView: 2,
 				},
 				768: {
 					slidesPerView: 3,
+                    spaceBetween: 24,
 				},
 				1200: {
 					slidesPerView: 3,

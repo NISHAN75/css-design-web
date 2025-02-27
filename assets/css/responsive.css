@@ -20,17 +20,167 @@
 
 
 
+    /* ====================== banner area section start ========================= */
+    .slider-navigator::before {
+        width: calc(100% - 190px);
+    }
+    .banner-title-caption-inner {
+        max-width: 650px;
+    }
+    /* ====================== banner area section start ========================= */
+
+    /* ====================== cta section start ========================= */
+    .cta-content {
+        max-width: 500px;
+    }
+    .cta-bg {
+        width: calc(50% - 170px);
+    }
+    /* ====================== cta section end ========================= */
+
+
 }
 
 /* max-width 1199 */
 @media (max-width: 1199.98px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    /* ====================== banner area section start ========================= */
+    .slider-navigator::before {
+        width: calc(100% - 20px);
+    }
+    .banner-title-caption-inner {
+        max-width: 470px;
+    }
+    /* ====================== banner area section start ========================= */
 
+    /* ====================== quality section start ========================= */
+    .quality-slider-area {
+        max-width: 550px;
+    }
+    /* ====================== quality section end ========================= */
 
+    /* ====================== services section start ========================= */
+    .services-content-area .col:nth-child(2) {
+        max-width: 350px;
+    }
+    .services-content-area .quality-content h2 ,
+    .services-content-area .quality-content .common-box-2 {
+        padding-left: 30px;
+    }
+    /* ====================== services section end ========================= */
+
+    /* ====================== cta section start ========================= */
+    .cta-bg {
+        width: calc(50% - 80px);
+    }
+    .cta-area .container {
+        max-width: 950px;
+    }
+    /* ====================== cta section end ========================= */
+
+    /* ====================== footer section start ========================= */
+    .top-footer-wrapper::before {
+        width: calc(100% - 362px);
+    }
+    .num-link ,
+    .address-info {
+        font-size: 16px;
+    }
+    .top-footer-wrapper {
+        padding: 21px 0;
+    }
+
+    /* ====================== footer section end ========================= */
 
 }
 
 /* max-width 991 */
 @media (max-width: 991.98px) {
+
+    /* heading  style*/
+
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+    
+    h3 {
+        font-size: 32px;
+    }
+    
+    h4 {
+        font-size: 28px;
+    }
+    
+    h5 {
+        font-size: 22px;
+    }
+    
+    h6 {
+        font-size: 18px;
+    }
+
+
+    /* ====================== banner area section start ========================= */
+    .banner-img img {
+        height: 504px;
+    }
+    .banner-content-info {
+        position: relative;
+    }
+    .banner-content-inner-info::before{
+        display: none;
+    }
+    .banner-content-inner-info {
+        background: #18365F;
+    }
+    .banner-content-inner-caption p {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+    .banner-content-inner-info .btn-1 {
+        margin-top: 24px;
+    }
+    .slider-navigator::before{
+        display: none;
+    }
+    .slider-navigator {
+        position: absolute;
+        top: 368px;
+        margin-top: 0;
+        padding: 0;
+    }
+    .banner-title-caption-area {
+        padding: 20px 0 24px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: 3;
+        background: rgba(24, 54, 95, 0.62);
+    }
+    .banner-title-caption-inner h5{
+        font-size: 22px;
+        color: #fff;
+    }
+    .banner-title-caption-inner {
+        max-width: 100%;
+    }
+    .navigator-label{
+        padding-right: 10px;
+    }
+    .banner-content-inner-info {
+        padding: 33px 0 38px;
+    }
+    /* ====================== banner area section end ========================= */
+
+
+
    /* ====================== quality section start ========================= */
    .quality-area .col:nth-child(2),
    .quality-area .col {
@@ -38,7 +188,7 @@
         max-width: 100%;
     }
     .quality-area .row {
-        --bs-gutter-y: 112px;
+        --bs-gutter-y: 60px;
     }
     .quality-content .common-box-2 {
         max-width: 100%;
@@ -48,27 +198,338 @@
     .quality-content h2 {
         padding-left: 0;
     }
+    .quality-slider-area {
+        max-width: 100%;
+    }
+    .swiper-icon-btn {
+        height: 36px;
+        width: 36px;
+    }
+    .quality-slider-wrapper .swiper-button-prev, .quality-slider-wrapper .swiper-rtl .swiper-button-next {
+        left: 0;
+        right: auto;
+    }
+    .quality-slider-wrapper .swiper-button-next, .quality-slider-wrapper .swiper-rtl .swiper-button-prev {
+        right: auto;
+        left: 54px;
+    }
+    .swiper-icon-btn svg {
+        margin-top: -3px;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 5px;
+        left: 110px;
+    }
+    .quality-area {
+        padding-bottom: 0;
+    }
+    .common-bg {
+        top: 41px;
+        height: 309px;
+    }
+    .reverse-quality .quality-content{
+        padding-left: 0;
+    }
+    .reverse-quality {
+        padding: 50px 0 58px;
+    }
+    .reverse-quality .row {
+        flex-direction: column-reverse;
+    }
+    .reverse-quality  .common-box {
+        padding: 6px;
+    }
+    .reverse-quality  .row {
+        --bs-gutter-y: 50px;
+    }
+    .reverse-quality  .quality-content .common-box-2  p {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .reverse-quality  .quality-content .common-box-2 {
+        padding-top: 15px;
+    }
    /* ====================== quality section end ========================= */
+
+   /* ====================== project section start ========================= */
+   .project-area {
+        padding: 78px 0 56px;
+    }
+    .project-area h2 {
+        margin-bottom: 12px;
+    }
+    .project-card-content h3 {
+        font-size: 30px;
+    }
+    .project-slider-wrapper {
+        padding-bottom: 85px;
+    }
+    .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+        bottom: 60px;
+    }
+   /* ====================== project section end ========================= */
+
+   /* ====================== services section start ========================= */
+   .services-content-area .row{
+    flex-direction: column-reverse;
+   }
+   .services-content-area .quality-content .common-box-2,
+   .services-content-area .quality-content h2 {
+        padding-left: 0;
+        max-width: 100%;
+    }
+    .services-content-area {
+        padding: 62px 0 50px;
+    }
+    .services-content-area .quality-content h2{
+        margin-bottom: 3px;
+    }
+    .services-content-area .row {
+        --bs-gutter-y: 50px;
+    }
+    .quality-img-info {
+        flex-wrap: wrap;
+    }
+    .quality-img-inner-info {
+        flex: 1 0 100%;
+    }
+    .quality-img-inner-info img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .quality-img-inner-info:nth-child(1) {
+        margin-bottom: 0;
+    }
+    .quality-img-inner-info:nth-child(2) {
+        margin-top: 0;
+    }
+    .services-content-area .common-box {
+        padding: 8px;
+        border: 0;
+        padding-left: 0;
+    }
+    .quality-img.common-box.position-relative.z-1::before {
+        content: "";
+        position: absolute;
+        left: 14px;
+        top: 0;
+        height: 100%;
+        width: calc(100% - 14px);
+        border: 2px solid #78AFDD;
+        z-index: -1;
+    }
+    .quality-img-info {
+        gap: 10px !important;
+    }
+    .quality-img-btn h5 {
+        font-size: 24px;
+    }
+    .quality-img-btn {
+        padding: 15px 25px;
+    }
+    .services-content-area .common-bg {
+        top: 462px;
+        height: 543px;
+        bottom: auto;
+    }
+   /* ====================== services section end ========================= */
+
+    /* ====================== cta section start ========================= */
+    .cta-bg {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 375px;
+        object-fit: cover;
+    }
+    .cta-area {
+        padding: 0;
+        padding-bottom: 31px;
+    }
+    .cta-content {
+        max-width: 100%;
+        margin-top: 42px;
+    }
+    .sub-title {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .cta-content h2 {
+        font-size: 36px;
+    }
+    .cta-content h2 br{
+        display: none;
+    }
+    /* ====================== cta section end ========================= */
+    /* ====================== footer section start ========================= */
+    .top-footer-wrapper .col:nth-child(1) {
+        max-width: 100%;
+    }
+    .top-footer-wrapper .col:nth-child(2) {
+        max-width: 100%;
+        padding-left: 30px;
+    }
+    .top-footer-wrapper .col {
+        flex: 1 0 50%;
+    }
+    .top-footer-wrapper::before {
+        width: calc(100% + 50px);
+        transform: translateX(0);
+        left: -25px;
+    }
+    .footer-area{
+        border: 0;
+    }
+    .top-footer-wrapper::after,
+    .top-footer-wrapper .col:nth-child(2)::before{
+        display: none;
+    }
+    .footer-logo img {
+        max-width: 174px;
+    }
+    .top-footer-wrapper {
+        padding: 16px 0;
+    }
+    .copy-right-wrapper {
+        padding: 28px 0 14px;
+    }
+    .address-info {
+        margin-bottom: 19px;
+        margin-left: 0;
+    }
+    .copy-right-wrapper  .col {
+        flex: 1 0 100%;
+    }
+    .copy-right-caption {
+        margin-top: 12px;
+    }
+    .other-menu-wrapper li {
+        padding-right: 18px;
+    }
+    /* ====================== footer section end ========================= */
 }
 
 /* max-width 767 */
 @media (max-width: 767.98px) {
-
+    /* ====================== services section start ========================= */
+    .quality-img-inner-info img {
+        height: 350px;
+    }
+    /* ====================== services section end ========================= */
 }
 
 /* max-width 575 */
 @media (max-width: 575.98px) {
-   
+    /* heading  style*/
+
+    h1 {
+    font-size: 40px;
+    }
+
+    h2 {
+    font-size: 32px;
+    }
+
+    h3 {
+    font-size: 28px;
+    }
+
+    h4 {
+    font-size: 24px;
+    }
+
+
 }
 
 /* max-width 479 */
 @media (max-width: 479.98px) {
 
- 
+    .navigator-label {
+        padding-right: 0px;
+    }
+    /* heading  style*/
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+    .common-box {
+        padding: 5px;
+    }
+/* ====================== quality section start ========================= */
+    .quality-img img {
+        min-height: 191px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .quality-slider-wrapper {
+        padding-bottom: 53px;
+    }
+    .quality-content h2 {
+        line-height: 1.25;
+    }
+/* ====================== quality section end ========================= */
+/* ====================== project section start ========================= */
+.project-slider-wrapper .swiper-slide {
+    max-width: 301px;
+}
+.project-card-content h3 {
+    font-size: 24px;
+}
+.project-sub-title {
+    line-height: 1;
+    margin-bottom: 0;
+}
+.project-card-content {
+    width: calc(100% - 20px);
+    margin-left: 20px;
+    padding: 37px 0;
+}
+/* ====================== project section end ========================= */
+
+/* ====================== services section start ========================= */
+    .quality-img-inner-info img {
+        height: 253px;
+    }
+    .quality-content ul li {
+        flex: 1 0 100%;
+    }
+/* ====================== services section end ========================= */
+
+
+    /* ====================== cta section start ========================= */
+    .sub-title {
+        font-size: 16px;
+    }
+    .cta-content h2 {
+        font-size: 22px;
+    }
+    /* ====================== cta section end ========================= */
+
 
 }
 
 /* max-width 383 */
 @media (max-width: 383.98px) {
-  
+    .reverse-quality  .quality-content .common-box-2  p {
+        max-width: 319px;
+    }
+    .cta-content p {
+        max-width: 313px;
+    }
+}
+/* max-width 375 */
+@media (max-width: 375px) {
+    .navigator-label {
+        font-size: 14px;
+    }
+    .top-footer-wrapper .col:nth-child(2) {
+        padding-left: 15px;
+    }
 }
